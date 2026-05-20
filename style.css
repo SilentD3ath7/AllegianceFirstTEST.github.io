@@ -5,10 +5,9 @@ body {min-height: 100%; margin: 0; background-color: rgb(95, 95, 95); display: f
 footer {min-height: 24px; padding: 10px 10px 8px 10px; text-align: center; background-color: darkslateblue;}
 footer a {color: black;}
 
-#headerWrapper {display: flex; flex-direction: row; align-items: center; background: linear-gradient(45deg, darkslateblue, transparent);}
+#headerWrapper {display: flex; flex-direction: row; align-items: center; position: relative; background: linear-gradient(45deg, darkslateblue, transparent);}
 
 #companyLogo {margin: 0; padding: 4px;}
-/*#companyLogo img {border: 4px solid red; border-radius: 0.2em;}*/
 
 #topMenuBar {text-align: center; background-color: rgba(255, 0, 255, 0.397); color: #fff; margin: 0; padding: 0} /*darkorchid, mediumorchid, rgb(177, 80, 201)*/
 #topMenuBar li {display: inline; margin: 0; padding: 0;}
@@ -21,3 +20,5 @@ footer a {color: black;}
 #main {flex: 1; padding: 10px;}
 
 .page {padding: 24px; background: lightgray; margin-bottom: 10px; box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%); border-radius: 2px;}
+
+#centerHeader {position: absolute; left: 50%; transform: translateX(-50%);}
