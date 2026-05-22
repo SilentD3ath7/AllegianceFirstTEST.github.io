@@ -16,34 +16,52 @@
             </div>
 
             <div id="headerInfo">
-                <h1>Allegiance First</h1> 
-            </div>
-
-            <div id="centerHeader">
-                <h1>Where do you want the company name?</h1>
+                <h1>Allegiance First Insurance Services</h1> 
             </div>
         </div>
     
         <ul id="topMenuBar">
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Insureance Services</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Insurance Services</a></li>
+            <li><a href="#">Contact Us (Try me!)</a></li> <!--Change me back-->
             <li><a href="#">Instant Commercial Quote/Issuance</a></li>
             <li><a href="#">Get A Quote</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Client Portal</a></li>
-            <li><a href="#">Even these can be changed!</a></li>
+            <li><a href="#">Even these can be changed!</a></li> <!--Delete me-->
+            <li><a href="#">Or removed! (Click me)</a></li> <!--Delete me-->
+            <li><a href="#" style="display: none;">Click me to bring it back</a></li> <!--Delete me-->
         </ul>
     </header>
 
     <section id="content">
         <div id="main">
-            <div class="page">
+            <div class="page" id="home"> <!--Delete me-->
                 <p>Hello, Mrs. Brennen and Mrs. Warner!</p>
             </div>
 
-            <div class="page"><p>Please let me know any modifications you would like to add, remove or change. 
+            <div class="page" id="home2"> <!--Delete me-->
+                <p>Please let me know any modifications you would like to add, remove or change. 
                 I made this with modifications in mind, so everything is relatively easy to manipulate!</p>
+            </div>
+
+            <div class="page" id="contact">
+                    <form action="" method="post">
+
+                        <label for="contact-email">Email:</label>
+                        <input type="email" name="email" id="contact-email" placeholder="name@example.com" required><br>
+
+                        <!-- <label for="userPSWD">Password:</label>
+                        <input type="password" name="password" id="userPSWD"><br> -->
+
+                        <label for="contact-name">Name:</label>
+                        <input type="text" name="name" id="contact-name" placeholder="Your Name" required><br>
+
+                        <label for="contact-reason">Reason:</label>
+                        <input type="text" name="reason" id="contact-reason" placeholder="Why contact us?" required><br>
+
+                        <button type="submit">Contact Us</button>
+                    </form>
             </div>
         </div>
     </section>

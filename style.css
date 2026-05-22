@@ -6,6 +6,7 @@ footer {min-height: 24px; padding: 10px 10px 8px 10px; text-align: center; backg
 footer a {color: black;}
 
 #headerWrapper {display: flex; flex-direction: row; align-items: center; position: relative; background: linear-gradient(45deg, darkslateblue, transparent);}
+#headerWrapper h1 {position: absolute; left: 50%; transform: translateX(-50%); margin: 0;}
 
 #companyLogo {margin: 0; padding: 4px;}
 
@@ -19,6 +20,6 @@ footer a {color: black;}
 
 #main {flex: 1; padding: 10px;}
 
-.page {padding: 24px; background: lightgray; margin-bottom: 10px; box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%); border-radius: 2px;}
+.page {display: none; padding: 24px; background: lightgray; margin-bottom: 10px; box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%); border-radius: 2px;}
 
-#centerHeader {position: absolute; left: 50%; transform: translateX(-50%);}
+/*#centerHeader {position: absolute; left: 50%; transform: translateX(-50%);}*/
