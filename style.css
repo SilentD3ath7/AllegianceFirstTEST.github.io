@@ -16,9 +16,11 @@ footer a {color: black;}
 #topMenuBar a:hover, #topMenuBar a:active {color: black; background-color: darkgray;}
 #topMenuBar a:visited {color: black;}
 
-#content {flex: 1; display: flex; flex-direction: row}
+#content {flex: 1; display: flex; flex-direction: row;}
 
 #main {flex: 1; padding: 10px;}
+
+#contact2 span {color: blue;}
 
 .page {display: none; padding: 24px; background: lightgray; margin-bottom: 10px; box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%); border-radius: 2px;}
 

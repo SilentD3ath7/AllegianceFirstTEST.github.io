@@ -2,6 +2,11 @@
 var activePage = "home"
 var activePage2 = "home2" //<!--Delete me-->
 
+function $(selector)
+{
+    return document.querySelector(selector);
+}
+
 function hide(id)
 {
     document.getElementById(id).style.display = "none";
@@ -16,15 +21,17 @@ function showHomePage()
 {
     hide(activePage);
     show("home");
-    show("home2");
+    show("home2"); //<!--Delete me-->
     activePage = "home";
 }
 
 function showContactPage()
 {
     hide(activePage);
-    hide(activePage2);
+    hide(activePage2); //<!--Delete me-->
     show("contact");
+    show("contact2");
+    printContactList();
     activePage = "contact";
 }
 
@@ -35,6 +42,21 @@ homeLink.addEventListener("click", showHomePage)
 
 var contactLink = document.querySelectorAll("#topMenuBar a")[2];
 contactLink.addEventListener("click", showContactPage)
+
+function printContactList()
+{
+    var contactList = 
+    [
+    {name: "Amanda Brennen", email: "amanda@allegiancefirst.com"},
+    {name: "Amber Warner", email: "amber@allegiancefirst.com"}];
+
+    var listMapResult = contactList.map(function(list)
+    {
+        return `<li>${list.name} <span>- ${list.email}</span></li>`
+    });
+
+    $("#contact2 ul").innerHTML = listMapResult.join("");
+}
 
 // Delete everything below later
 function hideFromList()
